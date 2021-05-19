@@ -1,1 +1,164 @@
 @charset "utf-8";
+
+/*--- common style ---*/
+.is-halfWidth {
+  width: 50%;
+}
+
+.is-fullWidth {
+  width: 100%;
+}
+
+.is-defaultText {
+  color: #949697;
+  font-size: 12px;
+}
+
+/*--- リンク ---*/
+.link-color {
+  color: #01a6a4;
+}
+
+.link-color:hover {
+  color: #01bfbd;
+}
+
+/*--- ボタンパーツ ---*/
+.button-init {
+  text-decoration: none;
+}
+
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  transition: .3s;
+  padding: 13px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+/*--- common style end ---*/
+
+.wrapper {
+  padding: 32px 0;
+  width: 100%;
+  background-color: #f2f6f7;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 640px;
+}
+
+.main-content {
+  box-sizing: border-box;
+  padding: 48px 64px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+}
+
+.form-title {
+  text-align: center;
+  color: #545658;
+  font-size: 24px;
+}
+
+/*--- SNS part ---*/
+.columns {
+  display: flex;
+  margin-top: 24px;
+}
+
+.column:last-child {
+  margin-left: 8px;
+}
+
+.is-facebook {
+  color: #fff;
+  background-color: #3b5999;
+  border-color: #3b5999;
+}
+
+.is-facebook:hover {
+  background-color: #344e87;
+  border-color: transparent;
+}
+
+.is-google {
+  color: #dd4b39;
+  background-color: #fff;
+}
+
+.is-google:hover {
+  background-color: #f7f7f7;
+}
+
+.supplement-text {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.devider {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.devider p {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.devider::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: #ececec;
+}
+
+/*--- form part ---*/
+.form-content {
+  margin-top: 20px;
+}
+
+/*--- 利用規約 ---*/
+.agreement {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 20px;
+}
+
+/*--- foot part---*/
+.foot-part {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.foot-part p, .resend-mail {
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.resend-mail {
+  margin-top: 8px;
+}
+
+.foot-part a:hover {
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+  border-bottom-color: #01bfbd;
+}
+
+.resend-mail {
+  display: inline-block;
+}
