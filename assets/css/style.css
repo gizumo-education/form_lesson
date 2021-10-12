@@ -98,7 +98,8 @@ gender(radio)
   padding: 3px 3px 3px 20px;
 }
 
-.gender-part::before,::after {
+.gender-part::before,
+.gender-part::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -166,7 +167,8 @@ course(checkbox)
   padding-left: 25px;
 }
 
-.course-option-text::before,::after {
+.course-option-text::before,
+.course-option-text::after {
   content: '';
   position: absolute;
   top: 50%;
