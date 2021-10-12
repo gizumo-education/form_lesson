@@ -208,6 +208,10 @@ submit
   background-color: #01bfbd;
 }
 
+.submit-btn:hover {
+  background-color: #01a6a4;
+}
+
 /*--- common style ---*/
 .is-halfWidth {
   width: 50%;
