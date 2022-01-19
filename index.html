@@ -26,7 +26,109 @@
           <div class="devider">
             <p class="is-defaultText">アカウント情報</p>
           </div>
+          <!-- form -->
           <form class="form-content" action="#" method="POST">
+
+            <!-- name -->
+            <div class="row name-box">
+              <!-- last name -->
+              <div class="name is-halfWidth">
+                <p class="label-text">名字<span class="alert"> ※</span></p>
+                <input type="text" name="last_name" class="input-init input-area" required>
+              </div>
+              <!-- first name -->
+              <div class="name is-halfWidth">
+                <p class="label-text">名前<span class="alert"> ※</span></p>
+                <input type="text" name="first_name" class="input-init input-area" required>
+              </div>
+            </div>
+
+            <!-- gender -->
+            <div class="row gender">
+              <p class="label-text is-halfWidth">性別</p>
+              <div class="gender-contents">
+                <!-- nameを統一することでグループ化 -->
+                <!-- male -->
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="male" class="gender-input">
+                  <span class="gender-part">男性</span>
+                </label>
+                <!-- female -->
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="female" class="gender-input">
+                  <span class="gender-part">女性</span>
+                </label>
+                <!-- other -->
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="other" class="gender-input">
+                  <span class="gender-part">その他</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- origin -->
+            <div class="row origin is-halfWidth">
+              <p class="label-text">出身</p>
+              <div class="select-area">
+                <select name="origin" class="input-init input-area origin-input">
+                  <option value="東京">東京</option>
+                  <option value="千葉">千葉</option>
+                  <option value="埼玉">埼玉</option>
+                  <option value="神奈川">神奈川</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- email -->
+            <div class="row email">
+              <p class="label-text">Eメール<span class="alert"> ※</span></p>
+              <input type="email" name="email" class="input-init input-area is-fullWidth" placeholder="ex) hoge@example.com" required>
+            </div>
+
+            <!-- tel -->
+            <div class="row tel">
+              <p class="label-text">電話番号</p>
+              <input type="tel" name="tel" class="input-init input-area is-fullWidth" placeholder="ex) 09012345678">
+            </div>
+
+            <!-- password-->
+            <div class="row password">
+              <p class="label-text">パスワード<span class="alert"> ※</span></p>
+              <input type="password" name="password" class="input-init input-area is-fullWidth" required>
+            </div>
+            <!-- password-confirm -->
+            <div class="row password">
+              <p class="label-text">パスワード(確認用)<span class="alert"> ※</span></p>
+              <input type="password" name="password-confirm" class="input-init input-area is-fullWidth" required>
+            </div>
+
+            <!-- course -->
+            <div class="row course">
+              <p class="label-text">希望コース</p>
+              <div class="course-option">
+                <input type="checkbox" name="course" value="frontend" id="frontend">
+                <label class="course-option-text" for="frontend">フロントエンド</label>
+              </div>
+              <div class="course-option">
+                <input type="checkbox" name="course" value="backend" id="backend">
+                <label class="course-option-text" for="backend">バックエンド</label>
+              </div>
+              <div class="course-option">
+                <input type="checkbox" name="course" value="app" id="app">
+                <label class="course-option-text" for="app">アプリ</label>
+              </div>
+            </div>
+
+            <!-- remarks -->
+            <div class="row remarks">
+              <p class="label-text">備考</p>
+              <textarea name="remarks" class="input-init input-area is-fullWidth" placeholder="何かあればご記入ください"></textarea>
+            </div>
+
+            <!-- row -->
+            <div class="row">
+              <input type="submit" value="アカウント作成" class="input-init button submit-btn is-fullWidth">
+            </div>
             <!--
               ここに続きのHTMLを書いていきましょう
             -->
