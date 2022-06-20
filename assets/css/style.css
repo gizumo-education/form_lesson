@@ -32,7 +32,7 @@
   box-sizing: border-box;
   display: inline-block;
   text-align: center;
-  transition: .3s;
+  transition: 0.3s;
   padding: 13px;
   font-size: 13px;
   font-weight: 500;
@@ -58,7 +58,7 @@
   padding: 48px 64px;
   background-color: #fff;
   border-radius: 4px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.18);
 }
 
 .form-title {
@@ -116,7 +116,7 @@
 }
 
 .devider::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -131,6 +131,46 @@
   margin-top: 20px;
 }
 
+.row:not(:first-child) {
+  margin-top: 20px;
+}
+
+/*--- 名前 ---*/
+.name-box {
+  display: flex;
+}
+
+.name {
+  margin-left: 16px;
+}
+
+.name:first-child {
+  margin-left: 0;
+}
+
+/*--- 性別 ---*/
+
+/*--- 出身 ---*/
+.select-area {
+  position: relative;
+  margin-top: 8px;
+}
+
+/*--- 希望コース ---*/
+.course-option {
+  margin-top: 10px;
+  color: #545658;
+  font-size: 16px;
+}
+
+.course-option:nth-of-type(1) {
+  margin-top: 5px;
+}
+
+/*--- 備考 ---*/
+
+/*--- 送信ボタン ---*/
+
 /*--- 利用規約 ---*/
 .agreement {
   font-size: 12px;
@@ -144,7 +184,8 @@
   margin-top: 32px;
 }
 
-.foot-part p, .resend-mail {
+.foot-part p,
+.resend-mail {
   line-height: 16px;
   font-size: 12px;
 }
