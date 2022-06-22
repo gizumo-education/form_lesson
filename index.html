@@ -30,18 +30,20 @@
             タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。
           </p>
           <div class="devider">
-            <p class="is-defaultText">アカウント情報</p>
+            <p class="is-defaultText">
+              アカウント情報
+            </p>
           </div>
           <form class="form-content" action="#" method="POST">
             <!-- 名前 -->
             <div class="row name-box">
               <div class="name is-halfWidth">
                 <p>名字<span class="alert"> ※</span></p>
-                <input type="text" name="last_name" required="" />
+                <input type="text" />
               </div>
               <div class="name is-halfWidth">
                 <p>名前<span class="alert"> ※</span></p>
-                <input type="text" name="first_name" required="" />
+                <input type="text" />
               </div>
             </div>
 
@@ -51,15 +53,15 @@
               <!-- 縦並び or 横並び -->
               <div>
                 <label>
-                  <input type="radio" name="gender" value="male" />
+                  <input type="text" />
                   <span>男性</span>
                 </label>
                 <label>
-                  <input type="radio" name="gender" value="female" />
+                  <input type="text" />
                   <span>女性</span>
                 </label>
                 <label>
-                  <input type="radio" name="gender" value="other" />
+                  <input type="text" />
                   <span>その他</span>
                 </label>
               </div>
@@ -69,115 +71,70 @@
             <div class="row origin is-halfWidth">
               <p>出身</p>
               <div class="select-area">
-                <select name="origin" id="origin">
-                  <option value="東京">東京</option>
-                  <option value="千葉">千葉</option>
-                  <option value="埼玉">埼玉</option>
-                  <option value="神奈川">神奈川</option>
-                </select>
+                <select></select>
               </div>
             </div>
 
             <!-- Eメール -->
             <div class="row email">
               <p>Eメール<span class="alert"> ※</span></p>
-              <input
-                type="email"
-                class="is-fullWidth"
-                name="email"
-                placeholder="ex) hoge@example.com"
-                required=""
-              />
+              <input type="text" class="is-fullWidth" />
             </div>
 
             <!-- 電話番号 -->
             <div class="row tel">
               <p>電話番号</p>
-              <input
-                type="tel"
-                class="is-fullWidth"
-                name="tel"
-                placeholder="ex) 09012345678"
-              />
+              <input type="text" class="is-fullWidth" />
             </div>
 
             <!-- パスワード -->
             <div class="row password">
               <p>パスワード<span class="alert"> ※</span></p>
-              <input
-                type="password"
-                class="is-fullWidth"
-                name="password"
-                required=""
-              />
+              <input type="text" class="is-fullWidth" />
             </div>
             <div class="row password">
               <p>パスワード(確認用)<span class="alert"> ※</span></p>
-              <input
-                type="password"
-                class="is-fullWidth"
-                name="password-confirm"
-                required=""
-              />
+              <input type="text" class="is-fullWidth" />
             </div>
 
             <!-- 複数チェック -->
             <div class="row course">
               <p>希望コース</p>
               <div class="course-option">
-                <input
-                  type="checkbox"
-                  name="course"
-                  value="frontend"
-                  id="frontend"
-                />
-                <label for="frontend"> フロントエンド </label>
+                <input type="text" />
+                <label>フロントエンド</label>
               </div>
               <div class="course-option">
-                <input
-                  type="checkbox"
-                  name="course"
-                  value="backend"
-                  id="backend"
-                />
-                <label for="backend"> バックエンド </label>
+                <input type="text" />
+                <label>バックエンド</label>
               </div>
               <div class="course-option">
-                <input type="checkbox" name="course" value="app" id="app" />
-                <label for="app">アプリ</label>
+                <input type="text" />
+                <label>アプリ</label>
               </div>
             </div>
 
             <!-- 備考 -->
             <div class="row remarks">
               <p>備考</p>
-              <textarea
-                class="is-fullWidth"
-                name="remarks"
-                placeholder="何かあればご記入ください"
-              ></textarea>
+              <textarea class="is-fullWidth"></textarea>
             </div>
 
             <!-- 送信ボタン -->
             <div class="row">
-              <input
-                type="submit"
-                value="アカウント作成"
-                class="button is-fullWidth"
-              />
+              <input type="text" class="button is-fullWidth" />
             </div>
             <p class="agreement">
-              アカウントを作成することにより、<a class="link-color" href=""
-                >利用規約</a
-              >と<a class="link-color" href="">プライバシーポリシー</a
-              >に同意するものとします。
+              アカウントを作成することにより、<a class="link-color" href="">利用規約</a>と<a class="link-color" href="">プライバシーポリシー</a>に同意するものとします。
             </p>
           </form>
         </div>
         <div class="foot-part">
           <p>
             すでにアカウントをお持ちですか？
-            <a class="link-color" href="">ログイン</a>
+            <a class="link-color" href="">
+              ログイン
+            </a>
           </p>
           <a class="link-color resend-mail" href="">
             認証メールが届きませんか？
