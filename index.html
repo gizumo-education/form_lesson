@@ -30,20 +30,18 @@
             タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。
           </p>
           <div class="devider">
-            <p class="is-defaultText">
-              アカウント情報
-            </p>
+            <p class="is-defaultText">アカウント情報</p>
           </div>
           <form class="form-content" action="#" method="POST">
             <!-- 名前 -->
             <div class="row name-box">
               <div class="name is-halfWidth">
                 <p>名字<span class="alert"> ※</span></p>
-                <input type="text" />
+                <input type="text" name="last_name" />
               </div>
               <div class="name is-halfWidth">
                 <p>名前<span class="alert"> ※</span></p>
-                <input type="text" />
+                <input type="text" name="first_name" />
               </div>
             </div>
 
@@ -53,15 +51,15 @@
               <!-- 縦並び or 横並び -->
               <div>
                 <label>
-                  <input type="text" />
+                  <input type="radio" name="gender" value="male" />
                   <span>男性</span>
                 </label>
                 <label>
-                  <input type="text" />
+                  <input type="radio" name="gender" value="female" />
                   <span>女性</span>
                 </label>
                 <label>
-                  <input type="text" />
+                  <input type="radio" name="gender" value="other" />
                   <span>その他</span>
                 </label>
               </div>
@@ -71,45 +69,45 @@
             <div class="row origin is-halfWidth">
               <p>出身</p>
               <div class="select-area">
-                <select></select>
+                <select name="origin"></select>
               </div>
             </div>
 
             <!-- Eメール -->
             <div class="row email">
               <p>Eメール<span class="alert"> ※</span></p>
-              <input type="text" class="is-fullWidth" />
+              <input type="text" name="email" class="is-fullWidth" />
             </div>
 
             <!-- 電話番号 -->
             <div class="row tel">
               <p>電話番号</p>
-              <input type="text" class="is-fullWidth" />
+              <input type="text" name="tel" class="is-fullWidth" />
             </div>
 
             <!-- パスワード -->
             <div class="row password">
               <p>パスワード<span class="alert"> ※</span></p>
-              <input type="text" class="is-fullWidth" />
+              <input type="text" name="password" class="is-fullWidth" />
             </div>
             <div class="row password">
               <p>パスワード(確認用)<span class="alert"> ※</span></p>
-              <input type="text" class="is-fullWidth" />
+              <input type="text" name="password-confirm" class="is-fullWidth" />
             </div>
 
             <!-- 複数チェック -->
             <div class="row course">
               <p>希望コース</p>
               <div class="course-option">
-                <input type="text" />
+                <input type="checkbox" name="course[]" value="frontend" />
                 <label>フロントエンド</label>
               </div>
               <div class="course-option">
-                <input type="text" />
+                <input type="checkbox" name="course[]" value="backend" />
                 <label>バックエンド</label>
               </div>
               <div class="course-option">
-                <input type="text" />
+                <input type="checkbox" name="course[]" value="app" />
                 <label>アプリ</label>
               </div>
             </div>
@@ -117,12 +115,16 @@
             <!-- 備考 -->
             <div class="row remarks">
               <p>備考</p>
-              <textarea class="is-fullWidth"></textarea>
+              <textarea class="is-fullWidth" name="remarks"></textarea>
             </div>
 
             <!-- 送信ボタン -->
             <div class="row">
-              <input type="text" class="button is-fullWidth" />
+              <input
+                type="submit"
+                class="button is-fullWidth"
+                value="アカウント作成"
+              />
             </div>
             <p class="agreement">
               アカウントを作成することにより、<a class="link-color" href="">利用規約</a>と<a class="link-color" href="">プライバシーポリシー</a>に同意するものとします。
